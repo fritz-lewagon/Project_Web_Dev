@@ -1,0 +1,61 @@
+.card-category {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: black;
+    background-size: cover;
+    border-radius: 8px;
+    box-shadow: 0 5 15px rgba(0,0,0,0.1);
+    height: 250px;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.1);
+}
+
+
+/* product  */
+
+.card-product {
+    display: flex;
+    background: white;
+    align-items: center;
+}
+
+.card-product img{
+    height: 150px;
+    margin-right: 16px;
+}
+
+.card-product h2 {
+    margin: 0;
+}
+
+.card-product p {
+    margin: 0;
+}
+
+
+/* Airbnb Style  */
+
+.card-trip {
+    background: white;
+}
+
+.card-trip-footer {
+    padding: 16px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.card-trip img {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-trip h2 {
+    margin: 0;
+}
+
+.card-trip p {
+    margin: 0;
+}
