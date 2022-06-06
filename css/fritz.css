@@ -1176,7 +1176,7 @@ progress {
 
   .col-md-6 {
     flex: 0 0 auto;
-    width: 50%;
+    width: 100%;
   }
 
   .col-md-7 {
@@ -4548,6 +4548,12 @@ textarea.form-control-lg {
 
 .card-title {
   margin-bottom: 0.5rem;
+}
+
+.subtitle-main {
+  margin-left: 110px;
+  font-size: 25px;
+  color:grey;
 }
 
 .card-subtitle {

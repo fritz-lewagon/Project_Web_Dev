@@ -235,11 +235,11 @@ sup {
 }
 
 a {
-  color: #0d6efd;
+  color: white;
   text-decoration: underline;
 }
 a:hover {
-  color: #0a58ca;
+  color: black;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -7771,7 +7771,7 @@ textarea.form-control-lg {
 
 .text-muted {
   --bs-text-opacity: 1;
-  color: #6c757d !important;
+  color: white !important;
 }
 
 .text-black-50 {
@@ -7842,7 +7842,7 @@ textarea.form-control-lg {
 
 .bg-dark {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+  background-color: rgba(77, 170, 179, 0.9) !important;
 }
 
 .bg-black {
@@ -11298,6 +11298,11 @@ textarea.form-control-lg {
 }
 .features-icons .features-icons-item .features-icons-icon i {
   font-size: 4.5rem;
+}
+
+.top-header{
+  color: rgba(77, 170, 179, 1);
+  font-size: 25px;
 }
 
 header.masthead {

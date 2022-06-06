@@ -3,32 +3,38 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <title>Shop Item - Start Bootstrap Template</title>
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Fiesta No Siesta Web Shop</title>
         <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <link rel="icon" type="image/x-icon" href="assets/logo_icon.png" />
         <!-- Bootstrap icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/fritz.css" rel="stylesheet" />
+        <link href="css/styles1.css" rel="stylesheet" />
     </head>
-
     <body>
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="#!">Start Bootstrap</a>
+                <img class="navbar-brand" src="assets/logo.png" width="200"></img>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#!">Home</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Lights & Speakers</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#!">Party Gadgets</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#!">Drinks & Snacks</a></li>
+                        <li style = "margin-left: 230px" class="nav-item"><a class="nav-link" href="#!">About us</a></li>
+
+
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Log In</a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#!">All Products</a></li>
+                                <li><a class="dropdown-item" href="#!">My Account</a></li>
                                 <li><hr class="dropdown-divider" /></li>
-                                <li><a class="dropdown-item" href="#!">Popular Items</a></li>
-                                <li><a class="dropdown-item" href="#!">New Arrivals</a></li>
+                                <li><a class="dropdown-item" href="#!">Orders</a></li>
+                                <li><a class="dropdown-item" href="#!">Help & FAQ</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -42,19 +48,22 @@
                 </div>
             </div>
         </nav>
+  
 
         <!-- Product section-->
         <section class="py-5">
             <div class="container px-4 px-lg-5 my-5">
                 <div class="row gx-4 gx-lg-5 align-items-center">
-                    <div class="col-md-6"><img class="card-img-top mb-5 mb-md-0" src="assets/pic_1.jpg" alt="..." /></div>
+                    <div class="col-md-6">
+                        <img class="card-img-top mb-5 mb-md-0" src="assets/pic_1.jpg" alt="..." style="float: left; width: 480px;"/></div>
                     <div class="col-md-6">
                         <div class="small mb-1">SKU: BST-498</div>
-                        <h1 class="display-5 fw-bolder">DOSS SoundBox</h1>
+                        <h4 class="fw-italic" style="font-size: larger; margin-top: 30px;">DOSS</h4>
+                        <h1 class="display-5 fw-bolder">SoundBox XL</h1>
                         <div class="fs-5 mb-5">
-                            <span>$104.00</span>
+                            <p class="product-price">€109.00</p>
                         </div>
-                        <p class="lead">Control simple de tu música: Con sus simples controles fácilmente podrás retroceder, avanzar, cambiar el volumen, pausar y reproducir. No hay que preocuparse por confundirse de botones, aún en condiciones de poca luz.</p>
+                        <p class="lead" style="color:black">Want the “real” bass that’s usually only produced by an actual subwoofer? Choose DOSS SoundBox XL. It’s small enough to fit just about anywhere, with full, rich sound that belies its size. The DOSS SoundBox XL is built for people who want more bass from their system but don’t have space for a subwoofer. It delivers chest-thumping bass and dynamic performance in a sound that is deep, loud, and clear.</p>
                         <div class="d-flex">
                             <input class="form-control text-center me-3" id="inputQuantity" type="num" value="1" style="max-width: 3rem" />
                             <button class="btn btn-outline-dark flex-shrink-0" type="button">
@@ -76,14 +85,15 @@
                     <div class="col mb-5">
                         <div class="card h-100">
                             <!-- Product image-->
-                            <img class="card-img-top" src="assets/pic_2.jpg" alt="..." />
+                            <img class="card-img-top" src="assets/img1.jpg" alt="..." ><img/>
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">
                                     <!-- Product name-->
-                                    <h5 class="fw-bolder">Fancy Product</h5>
+                                    <h4 class="fw-italic">SOUNDBOKS</h4>
+                                    <h5 class="fw-item">SB2 Party Speaker</h5>
                                     <!-- Product price-->
-                                    $40.00 - $80.00
+                                    <p class="product-price">€999.00</p>
                                 </div>
                             </div>
                             <!-- Product actions-->
@@ -97,23 +107,16 @@
                             <!-- Sale badge-->
                             <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
                             <!-- Product image-->
-                            <img class="card-img-top" src="assets/pic_3.jpg" alt="..." />
+                            <img class="card-img-top" src="assets/img4.jpg" alt="..." />
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">
                                     <!-- Product name-->
-                                    <h5 class="fw-bolder">Special Item</h5>
-                                    <!-- Product reviews-->
-                                    <div class="d-flex justify-content-center small text-warning mb-2">
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                    </div>
+                                    <h4 class="fw-italic">INNODISCO</h4>
+                                    <h5 class="fw-item">Party Light Deluxe</h5>
                                     <!-- Product price-->
-                                    <span class="text-muted text-decoration-line-through">$20.00</span>
-                                    $18.00
+                                    <p class="product-price">€59.00</p>
+                                    <img class="delivery-img"src="assets/delivery.png">
                                 </div>
                             </div>
                             <!-- Product actions-->
@@ -128,15 +131,17 @@
                             <!-- Sale badge-->
                             <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
                             <!-- Product image-->
-                            <img class="card-img-top" src="assets/pic_4.jpg" alt="..." />
+                            <img class="card-img-top" src="assets/img5.jpg" alt="..." />
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">
                                     <!-- Product name-->
-                                    <h5 class="fw-bolder">Sale Item</h5>
+                                    <h4 class="fw-italic">FOAMY</h4>
+                                    <h5 class="fw-item">Foam Glow Sticks</h5>
                                     <!-- Product price-->
-                                    <span class="text-muted text-decoration-line-through">$50.00</span>
-                                    $25.00
+                                    <p class="product-price text-decoration-line-through">€15.00</p>
+                                    <p class="product-price" style="float: right; margin-top: -25px;" >€10.00</p>
+                                    <img class="delivery-img"src="assets/delivery.png">
                                 </div>
                             </div>
                             <!-- Product actions-->
@@ -149,22 +154,17 @@
                     <div class="col mb-5">
                         <div class="card h-100">
                             <!-- Product image-->
-                            <img class="card-img-top" src="assets/pic_5.jpg" alt="..." />
+                            <img class="card-img-top" src="assets/img11.jpg" alt="..." />
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">
                                     <!-- Product name-->
-                                    <h5 class="fw-bolder">Popular Item</h5>
-                                    <!-- Product reviews-->
-                                    <div class="d-flex justify-content-center small text-warning mb-2">
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                    </div>
+                                    <h4 class="fw-italic">S.A. Damm</h4>
+                                    <h5 class="fw-item">Estrella Damm</h5>
                                     <!-- Product price-->
-                                    $40.00
+                                    <p class="product-price text-decoration-line-through">€1.99</p>
+                                    <p class="product-price" style="float: right; margin-top: -25px;" >€0.99</p>
+                                    <img class="delivery-img"src="assets/delivery.png">
                                 </div>
                             </div>
                             <!-- Product actions-->
@@ -178,7 +178,35 @@
         </section>
         <!-- Footer-->
         <footer class="py-5 bg-dark">
-            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2022</p></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 h-100 text-center text-lg-start my-auto">
+                        <ul class="list-inline mb-2">
+                            <li class="list-inline-item"><a href="#!">About</a></li>
+                            <li class="list-inline-item" style="color: white;">⋅</li>
+                            <li class="list-inline-item" ><a href="#!">Contact</a></li>
+                            <li class="list-inline-item" style="color: white;">⋅</li>
+                            <li class="list-inline-item"><a href="#!">Terms of Use</a></li>
+                            <li class="list-inline-item" style="color: white;">⋅</li>
+                            <li class="list-inline-item"><a href="#!">Privacy Policy</a></li>
+                        </ul>
+                        <p class="text-muted small mb-4 mb-lg-0" style="color: white;">&copy; Fiesta No Siesta 2022. All Rights Reserved.</p>
+                    </div>
+                </div>
+                <div class="footer-box">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item me-4">
+                            <a href="#!"><i class="bi-facebook fs-3"></i></a>
+                        </li>
+                        <li class="list-inline-item me-4">
+                            <a href="#!"><i class="bi-twitter fs-3"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#!"><i class="bi-instagram fs-3"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </footer>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
