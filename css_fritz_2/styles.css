@@ -487,11 +487,63 @@ progress {
   display: none !important;
 }
 
-.lead {
-  font-size: 1.25rem;
+.display-4 {
+  font-size: calc(1.475rem + 2.7vw);
   font-weight: 300;
+  line-height: 1.2;
+  font-family: "Object Sans", sans-serif;
+  text-transform: uppercase;
+  font-style: italic;
+  text-align: left;
 }
 
+
+
+.container{
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.lead {
+  font-size: 20px;
+  font-weight: 300;
+  text-align: left;
+  margin-top: 0px;
+  font-family: "Object Sans", sans-serif;
+  color: white;
+  /*position:relative; right:200px; top:-200px; */
+}
+
+.lead1 {
+  font-size: 20px;
+  font-weight: 300;
+  text-align: left;
+  margin-top: 0px;
+  font-family: "Object Sans", sans-serif;
+  color: black;
+  /*position:relative; right:200px; top:-200px; */
+}
+
+
+.main-img {
+  align-items: right;
+}
+
+.main-img-container{
+  align-items: right;
+}
+
+.bg-dark {
+  --bs-bg-opacity: 1;
+  background-color: rgba(77, 170, 179, 0.9) !important;
+}
 .display-1 {
   font-size: calc(1.625rem + 4.5vw);
   font-weight: 300;
@@ -1379,7 +1431,29 @@ progress {
 
   .col-lg-4 {
     flex: 0 0 auto;
-    width: 33.33333333%;
+    width: 25%;
+  }
+
+  .col-lg-4-new {
+    flex: 0 0 auto;
+    width: 32%;
+  }
+
+  .main-button{
+    color: white;
+    border-radius: 8px;
+    align-items: right;
+    border-color: grey;
+    background-color: white;
+    padding: 15px;
+    text-align: left;;
+    display: flex;
+    font-size: 20px;
+    margin-top: 25px;
+    font-family: "Object Sans", sans-serif;
+    color: rgba(77, 170, 179, 0.9);
+    font-weight: bold;
+    text-transform: uppercase;
   }
 
   .col-lg-5 {
@@ -7716,7 +7790,7 @@ textarea.form-control-lg {
 /* rtl:end:remove */
 .text-primary {
   --bs-text-opacity: 1;
-  color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
+  color: rgba(77, 170, 179, 1) !important;
 }
 
 .text-secondary {
