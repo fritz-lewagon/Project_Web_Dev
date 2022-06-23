@@ -89,6 +89,242 @@ body {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+/* LOGIN FORM STYLES */
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 130px;
+  right: 35%;
+  z-index: 9;
+}
+
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+
+  background-image: url('/crud_tasks/images/wall.png');
+
+}
+
+.form-register {
+  width: 400px;
+  background: lightgrey;
+  padding: 30px;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 4px;
+  font-family: var(--bs-font-sans-serif);
+  color: gray;
+  box-shadow: 7px 13px 37px grey;
+}  
+
+.form-register h4 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+
+.controls {
+  width: 100%;
+  background: white;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid white;
+  font-size: 18px;
+  color:gray;
+
+}
+
+.form-register p {
+  height: 40px;
+  text-align: center;
+  font-size: 18px; 
+  line-height: 40px;
+}
+
+.form-register a {
+  color: gray;
+  text-decoration: none;
+}
+
+.form-register a:hover {
+  color: rgba(77, 170, 179, 0.9);
+  text-decoration: underline;
+}
+
+.botons {
+  width: 100%;
+  background: #24303c;
+  border: none;
+  padding: 12px;
+  color: white;
+  margin: 16px 0;
+  font-size: 16px;    
+}
+
+.botons:hover {
+  background-color: rgba(77, 170, 179, 0.9);
+}
+
+
+.list-tasks {
+  width: 950px;
+  background: #24303c;
+  padding: 30px;
+  margin: auto;
+  margin-top: 50px;
+  border-radius: 4px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  box-shadow: 7px 13px 37px #000;
+}
+
+.error-login {
+width: 400px;
+background:brown;
+padding: 30px;
+margin: auto;
+margin-top: 50px;
+border-radius: 4px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+color: white;
+box-shadow: 7px 13px 37px #000;
+}
+
+.welcome {
+width: 400px;
+background:green;
+padding: 30px;
+margin: auto;
+margin-top: 50px;
+border-radius: 4px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+color: white;
+box-shadow: 7px 13px 37px #000;
+}
+.content-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  min-width: 400px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.content-table thead tr {
+  background-color:#1f53c5;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+  padding: 12px 15px;
+}
+
+.content-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+  background-color:deepskyblue;
+
+}
+
+.content-table td a {
+  text-decoration: none;
+  color: white;
+}
+
+.single-button {
+  background-color: rgba(77, 170, 179, 0.9);;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+
+}
+
+.single-button:hover {
+  background-color: turquoise;
+  color: white;
+}
+
+
+
+
 hr {
   margin: 1rem 0;
   color: inherit;
