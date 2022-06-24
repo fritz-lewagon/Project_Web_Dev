@@ -305,7 +305,7 @@ box-shadow: 7px 13px 37px #000;
 }
 
 .single-button {
-  background-color: #1f53c5;;
+  background-color: rgba(77, 170, 179, 0.9);;
   border: none;
   color: white;
   padding: 12px 30px;

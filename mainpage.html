@@ -25,17 +25,24 @@
                         <li class="nav-item"><a class="nav-link" href="#!">Lights & Speakers</a></li>
                         <li class="nav-item"><a class="nav-link" href="#!">Party Gadgets</a></li>
                         <li class="nav-item"><a class="nav-link" href="#!">Drinks & Snacks</a></li>
-                        <li style = "margin-left: 230px" class="nav-item"><a class="nav-link" href="#!">About us</a></li>
+                        <li style = "margin-left: 230px" class="nav-item"><a class="nav-link" href="about_us.html">About us</a></li>
 
 
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Log In</a>
+                            <a class="nav-link" onclick="openLogin()" role="button">Log In</a>
+                            
+                            
+                            <!--<button class="nav-link dropdown-toggle" onclick="openForm()">Open Form</button> -->
+                            <!-- <button class="open-button" onclick="openForm()">Open Form</button> -->
+
+                            <!--
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="#!">My Account</a></li>
                                 <li><hr class="dropdown-divider" /></li>
                                 <li><a class="dropdown-item" href="#!">Orders</a></li>
                                 <li><a class="dropdown-item" href="#!">Help & FAQ</a></li>
                             </ul>
+                            -->
                         </li>
                     </ul>
                     <form class="d-flex">
@@ -64,6 +71,46 @@
                 </div>
             </div>
         </header>
+
+        <!-- Log in Pop-up-->
+        <div class="form-popup" id="LoginForm">
+        <form class="form-register" name="login_user" method="POST" action="verify.php">
+            <h4>Login</h4>
+            <input class="controls" type="text" name="username" id="username" placeholder="Write your username">
+            <input class="controls" type="password" name="pass" id="pass" placeholder="Write your password">
+            <input class="botons" type="submit" value="Login">
+            <p><a class="nav-link" onclick="openRegister()" role="button">No account? Sign up here</a></p>
+            <p><a href="mainpage.html">Back to main page</a></p>
+
+        </form>
+        </div>
+        
+        <script>
+        function openLogin() {
+            document.getElementById("LoginForm").style.display = "block";
+        }
+        </script>
+
+        <!-- Register Pop-up-->
+        <div class="form-popup" id="RegisterForm">
+        <form class="form-register" name="reg_user" method="POST" action="user_reg.php">
+            <h4>Sign Up</h4>
+            <input class="controls" type="text" name="firstname" id="firstname" placeholder="Write your firstname" required>
+            <input class="controls" type="text" name="lastname" id="lastname" placeholder="Write your lastname" required>
+            <input class="controls" type="text" name="username" id="username" placeholder="Write your username" required>
+            <input class="controls" type="password" name="pass" id="pass" placeholder="Write your password" required>
+            <input class="botons" type="submit" value="Register">
+            <p><a class="nav-link" onclick="openLogin()" role="button">Already have an account?</a></p>
+            <p><a href="mainpage.html">Back to main page</a></p>
+        </form>
+        </div>
+
+        <script>
+            function openRegister() {
+            document.getElementById("RegisterForm").style.display = "block";
+            }
+        </script>
+
         <!-- Section Products first row-->
         <section class="py-5">
             <div class = "title">
