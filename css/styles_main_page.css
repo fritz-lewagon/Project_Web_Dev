@@ -914,6 +914,7 @@ progress {
 
 .main-img-container{
   align-items: right;
+  margin-top: 60px;  
 }
 
 .container,
@@ -4318,14 +4319,15 @@ textarea.form-control-lg {
 }
 
 .navbar {
-  position: relative;
+  position: fixed;
+  top: 0;
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+  width: 100%;
+  z-index: 9;
 }
+
 .navbar > .container,
 .navbar > .container-fluid,
 .navbar > .container-sm,
@@ -7993,8 +7995,14 @@ textarea.form-control-lg {
   text-align: right !important;
 }
 
+.text-center-main {
+  text-align: center !important;
+  margin-bottom: 86px;
+}
+
 .text-center {
   text-align: center !important;
+
 }
 
 .text-decoration-none {
@@ -8172,7 +8180,7 @@ textarea.form-control-lg {
 
 .bg-dark {
   --bs-bg-opacity: 1;
-  background-color: rgba(77, 170, 179, 0.9) !important;
+  background-color: rgba(77, 170, 179, 1) !important;
 }
 
 .bg-black {
