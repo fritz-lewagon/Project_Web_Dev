@@ -34,9 +34,9 @@ body {
     padding: 10px;
     border-radius: 4px;
     margin-bottom: 16px;
-    border: 1px solid white;
+    border: 1px solid lightgrey;
     font-size: 18px;
-    color:white;
+    color:grey;
 
 }
 
@@ -68,9 +68,8 @@ body {
 }
 
 .botons:hover {
-    background-color: turquoise;
+    background-color: grey;
 }
-
 
 .list-tasks {
     width: 950px;
@@ -89,24 +88,29 @@ body {
   background:brown;
   padding: 30px;
   margin: auto;
-  margin-top: 50px;
+  margin-top: 100px;
   border-radius: 4px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
   box-shadow: 7px 13px 37px #000;
+  height: 200px;
 }
+
 
 .welcome {
   width: 400px;
-  background:green;
+  background:rgba(77, 170, 179, 0.9);
   padding: 30px;
   margin: auto;
-  margin-top: 50px;
+  margin-top: 100px;
   border-radius: 4px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
   box-shadow: 7px 13px 37px #000;
+  height: 200px;
+
 }
+
 .content-table {
     border-collapse: collapse;
     margin: 25px 0;

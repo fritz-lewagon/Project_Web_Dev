@@ -29,25 +29,12 @@
 
 
                         <li class="nav-item dropdown">
-                            <a class="nav-link" onclick="openLogin()" role="button">Log In</a>
-                            
-                            
-                            <!--<button class="nav-link dropdown-toggle" onclick="openForm()">Open Form</button> -->
-                            <!-- <button class="open-button" onclick="openForm()">Open Form</button> -->
-
-                            <!--
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#!">My Account</a></li>
-                                <li><hr class="dropdown-divider" /></li>
-                                <li><a class="dropdown-item" href="#!">Orders</a></li>
-                                <li><a class="dropdown-item" href="#!">Help & FAQ</a></li>
-                            </ul>
-                            -->
+                            <a class="nav-link" href="login.html" role="button">Log In</a>
                         </li>
                     </ul>
-                    <form class="d-flex">
-                        <button class="btn btn-outline-dark" type="submit">
-                            <i class="bi-cart-fill me-1"></i>
+                    <form class="d-flex" >
+                        <button class="btn btn-outline-dark" type="submit" href="checkout.html">
+                            <i class="bi-cart-fill me-1" ></i>
                             Cart
                             <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
                         </button>
@@ -67,50 +54,12 @@
                     <p class= "lead fw-normal text-white-50 mb-0">No matter what you need for your party: We deliver all your party items including speakers, games,
                         and drinks directly to your home. Within 10 minutes and at dicsount prices. <br>
                         Make the best parties just a click away.​</p>
-                    <button class = "main-button" type = "button"> Start your Fiesta now!</button>
+                    <button class = "main-button" type = "button" href="login.html"> Start your Fiesta now!</button>
+                    
                 </div>
             </div>
         </header>
-
-        <!-- Log in Pop-up-->
-        <div class="form-popup" id="LoginForm">
-        <form class="form-register" name="login_user" method="POST" action="verify.php">
-            <h4>Login</h4>
-            <input class="controls" type="text" name="username" id="username" placeholder="Write your username">
-            <input class="controls" type="password" name="pass" id="pass" placeholder="Write your password">
-            <input class="botons" type="submit" value="Login">
-            <p><a class="nav-link" onclick="openRegister()" role="button">No account? Sign up here</a></p>
-            <p><a href="mainpage.html">Back to main page</a></p>
-
-        </form>
-        </div>
         
-        <script>
-        function openLogin() {
-            document.getElementById("LoginForm").style.display = "block";
-        }
-        </script>
-
-        <!-- Register Pop-up-->
-        <div class="form-popup" id="RegisterForm">
-        <form class="form-register" name="reg_user" method="POST" action="user_reg.php">
-            <h4>Sign Up</h4>
-            <input class="controls" type="text" name="firstname" id="firstname" placeholder="Write your firstname" required>
-            <input class="controls" type="text" name="lastname" id="lastname" placeholder="Write your lastname" required>
-            <input class="controls" type="text" name="username" id="username" placeholder="Write your username" required>
-            <input class="controls" type="password" name="pass" id="pass" placeholder="Write your password" required>
-            <input class="botons" type="submit" value="Register">
-            <p><a class="nav-link" onclick="openLogin()" role="button">Already have an account?</a></p>
-            <p><a href="mainpage.html">Back to main page</a></p>
-        </form>
-        </div>
-
-        <script>
-            function openRegister() {
-            document.getElementById("RegisterForm").style.display = "block";
-            }
-        </script>
-
         <!-- Section Products first row-->
         <section class="py-5">
             <div class = "title">
@@ -135,7 +84,13 @@
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                                <form class="add_form" name="add_card" method="POST" action="add_card.php">                             
+                                    <button class="btn btn-outline-dark flex-shrink-0" type="submit">
+                                        <input type="hidden" name = "id_product" value ="1">
+                                        <i class="bi-cart-fill me-1"></i>
+                                        Add to cart
+                                    </button>
+                               </form>   
                             </div>
                         </div>
                     </div>
@@ -159,7 +114,13 @@
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                                <form class="add_form" name="add_card" method="POST" action="add_card.php">                             
+                                    <button class="btn btn-outline-dark flex-shrink-0" type="submit">
+                                        <input type="hidden" name = "id_product" value ="2">
+                                        <i class="bi-cart-fill me-1"></i>
+                                        Add to cart
+                                    </button>
+                               </form>   
                             </div>
                         </div>
                     </div>
@@ -183,7 +144,13 @@
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                                <form class="add_form" name="add_card" method="POST" action="add_card.php">                             
+                                    <button class="btn btn-outline-dark flex-shrink-0" type="submit">
+                                        <input type="hidden" name = "id_product" value ="3">
+                                        <i class="bi-cart-fill me-1"></i>
+                                        Add to cart
+                                    </button>
+                               </form>   
                             </div>
                         </div>
                     </div>
@@ -205,7 +172,13 @@
                                 
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                                <form class="add_form" name="add_card" method="POST" action="add_card.php">                             
+                                    <button class="btn btn-outline-dark flex-shrink-0" type="submit">
+                                        <input type="hidden" name = "id_product" value ="4">
+                                        <i class="bi-cart-fill me-1"></i>
+                                        Add to cart
+                                    </button>
+                               </form>   
                             </div>
                         </div>
                     </div>
@@ -239,7 +212,13 @@
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                                <form class="add_form" name="add_card" method="POST" action="add_card.php">                             
+                                    <button class="btn btn-outline-dark flex-shrink-0" type="submit">
+                                        <input type="hidden" name = "id_product" value ="5">
+                                        <i class="bi-cart-fill me-1"></i>
+                                        Add to cart
+                                    </button>
+                               </form>   
                             </div>
                         </div>
                     </div>
@@ -259,7 +238,13 @@
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                                <form class="add_form" name="add_card" method="POST" action="add_card.php">                             
+                                    <button class="btn btn-outline-dark flex-shrink-0" type="submit">
+                                        <input type="hidden" name = "id_product" value ="6">
+                                        <i class="bi-cart-fill me-1"></i>
+                                        Add to cart
+                                    </button>
+                               </form>   
                             </div>
                         </div>
                     </div>
@@ -283,7 +268,13 @@
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                                <form class="add_form" name="add_card" method="POST" action="add_card.php">                             
+                                    <button class="btn btn-outline-dark flex-shrink-0" type="submit">
+                                        <input type="hidden" name = "id_product" value ="7">
+                                        <i class="bi-cart-fill me-1"></i>
+                                        Add to cart
+                                    </button>
+                               </form>   
                             </div>
                         </div>
                     </div>
@@ -304,7 +295,13 @@
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                                <form class="add_form" name="add_card" method="POST" action="add_card.php">                             
+                                    <button class="btn btn-outline-dark flex-shrink-0" type="submit">
+                                        <input type="hidden" name = "id_product" value ="8">
+                                        <i class="bi-cart-fill me-1"></i>
+                                        Add to cart
+                                    </button>
+                               </form>   
                             </div>
                         </div>
                     </div>
@@ -338,7 +335,13 @@
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                                <form class="add_form" name="add_card" method="POST" action="add_card.php">                             
+                                    <button class="btn btn-outline-dark flex-shrink-0" type="submit">
+                                        <input type="hidden" name = "id_product" value ="9">
+                                        <i class="bi-cart-fill me-1"></i>
+                                        Add to cart
+                                    </button>
+                               </form>   
                             </div>
                         </div>
                     </div>
@@ -359,7 +362,13 @@
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                                <form class="add_form" name="add_card" method="POST" action="add_card.php">                             
+                                    <button class="btn btn-outline-dark flex-shrink-0" type="submit">
+                                        <input type="hidden" name = "id_product" value ="10">
+                                        <i class="bi-cart-fill me-1"></i>
+                                        Add to cart
+                                    </button>
+                               </form>   
                             </div>
                         </div>
                     </div>
@@ -383,7 +392,13 @@
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                                <form class="add_form" name="add_card" method="POST" action="add_card.php">                             
+                                    <button class="btn btn-outline-dark flex-shrink-0" type="submit">
+                                        <input type="hidden" name = "id_product" value ="11">
+                                        <i class="bi-cart-fill me-1"></i>
+                                        Add to cart
+                                    </button>
+                               </form>   
                             </div>
                         </div>
                     </div>
@@ -404,7 +419,13 @@
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                                <form class="add_form" name="add_card" method="POST" action="add_card.php">                             
+                                    <button class="btn btn-outline-dark flex-shrink-0" type="submit">
+                                        <input type="hidden" name = "id_product" value ="12">
+                                        <i class="bi-cart-fill me-1"></i>
+                                        Add to cart
+                                    </button>
+                               </form>   
                             </div>
                         </div>
                     </div>
