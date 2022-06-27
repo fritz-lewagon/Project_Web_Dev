@@ -12,6 +12,8 @@
     $id_user = $_SESSION['id_user'];
     die($id_user);
      ?>
-    <p>You have succesfully logged out</p>
+    <section class="form-register">
+    <h4>You have succesfully logged out.</h4>
+    </section>
 </body>
 </html>

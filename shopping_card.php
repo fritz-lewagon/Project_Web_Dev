@@ -18,7 +18,7 @@ if ($id_user == "")
 }
  ?>
     <section class="form-register"> 
-        <h4> Shopping Card</h4>
+        <h4> Shopping Cart</h4>
         <table class="shopping_card">
             <thead>
               <tr>

@@ -8,15 +8,19 @@
     <title>Form register</title>
 </head>
 <body>
-    <form class="form-register" name="reg_user" method="POST" action="user_reg.php">
-        <h4>Sign Up</h4>
-        <input class="controls" type="text" name="firstname" id="firstname" placeholder="Write your firstname" required>
-        <input class="controls" type="text" name="lastname" id="lastname" placeholder="Write your lastname" required>
-        <input class="controls" type="text" name="username" id="username" placeholder="Write your username" required>
-        <input class="controls" type="password" name="pass" id="pass" placeholder="Write your password" required>
-        <input class="botons" type="submit" value="Register">
-        <p><a href="login.html">Already have an account?</a></p>
-        <p><a href="mainpage.html">Back to main page</a></p>
-    </form>
+    <div class="bg">
+        <div class = "content-form">
+            <form class="form-register" name="reg_user" method="POST" action="user_reg.php">
+                <h4>Sign Up</h4>
+                <input class="controls" type="text" name="firstname" id="firstname" placeholder="Write your firstname" required>
+                <input class="controls" type="text" name="lastname" id="lastname" placeholder="Write your lastname" required>
+                <input class="controls" type="text" name="username" id="username" placeholder="Write your username" required>
+                <input class="controls" type="password" name="pass" id="pass" placeholder="Write your password" required>
+                <input class="botons" type="submit" value="Register">
+                <p><a href="login.html">Already have an account?</a></p>
+                <p><a href="mainpage.html">Back to main page</a></p>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
