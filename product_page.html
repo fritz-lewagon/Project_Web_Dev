@@ -21,26 +21,18 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-                        <li class="nav-item"><a class="nav-link" href="#!">Home</a></li>
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Lights & Speakers</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">Party Gadgets</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">Drinks & Snacks</a></li>
-                        <li style = "margin-left: 230px" class="nav-item"><a class="nav-link" href="#!">About us</a></li>
-
+                        <li class="nav-item"><a class="nav-link" href="mainpage.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="mainpage.html#lights_and_speakers">Lights & Speakers</a></li>
+                        <li class="nav-item"><a class="nav-link" href="mainpage.html#party_gadgets">Party Gadgets</a></li>
+                        <li class="nav-item"><a class="nav-link" href="mainpage.html#drinks_snacks">Drinks & Snacks</a></li>
+                        <li style = "margin-left: 230px" class="nav-item"><a class="nav-link" href="about_us.html">About us</a></li>
 
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Log In</a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#!">My Account</a></li>
-                                <li><hr class="dropdown-divider" /></li>
-                                <li><a class="dropdown-item" href="#!">Orders</a></li>
-                                <li><a class="dropdown-item" href="#!">Help & FAQ</a></li>
-                            </ul>
+                            <a class="nav-link" href="login.html" role="button">Log in</a>
                         </li>
                     </ul>
                     <form class="d-flex">
-                        <button class="btn btn-outline-dark" type="submit">
-                            <i class="bi-cart-fill me-1"></i>
+                        <button class="btn btn-outline-dark" type="submit" onclick="window.location.href='shopping_card.php'">                            <i class="bi-cart-fill me-1"></i>
                             Cart
                             <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
                         </button>
@@ -57,7 +49,7 @@
                     <div class="col-md-6">
                         <img class="card-img-top mb-5 mb-md-0" src="assets/pic_1.jpg" alt="..." style="float: left; width: 480px;"/></div>
                     <div class="col-md-6">
-                        <div class="small mb-1">SKU: BST-498</div>
+                        <div class="small mb-1"></div>
                         <h4 class="fw-italic" style="font-size: larger; margin-top: 30px;">DOSS</h4>
                         <h1 class="display-5 fw-bolder">SoundBox XL</h1>
                         <div class="fs-5 mb-5">
@@ -65,11 +57,13 @@
                         </div>
                         <p class="lead" style="color:black">Want the “real” bass that’s usually only produced by an actual subwoofer? Choose DOSS SoundBox XL. It’s small enough to fit just about anywhere, with full, rich sound that belies its size. The DOSS SoundBox XL is built for people who want more bass from their system but don’t have space for a subwoofer. It delivers chest-thumping bass and dynamic performance in a sound that is deep, loud, and clear.</p>
                         <div class="d-flex">
-                            <input class="form-control text-center me-3" id="inputQuantity" type="num" value="1" style="max-width: 3rem" />
-                            <button class="btn btn-outline-dark flex-shrink-0" type="button">
-                                <i class="bi-cart-fill me-1"></i>
-                                Add to cart
-                            </button>
+                            <form class="add_form" name="add_card" method="POST" action="add_card.php">                             
+                                <button class="btn btn-outline-dark flex-shrink-0" type="submit">
+                                    <input type="hidden" name = "id_product" value ="3">
+                                    <i class="bi-cart-fill me-1"></i>
+                                    Add to cart
+                                </button>
+                           </form>   
                         </div>
                     </div>
                 </div>
@@ -98,7 +92,13 @@
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">View options</a></div>
+                                <form class="add_form" name="add_card" method="POST" action="add_card.php">                             
+                                    <button class="btn btn-outline-dark flex-shrink-0" type="submit">
+                                        <input type="hidden" name = "id_product" value ="1">
+                                        <i class="bi-cart-fill me-1"></i>
+                                        Add to cart
+                                    </button>
+                               </form>   
                             </div>
                         </div>
                     </div>
@@ -121,7 +121,13 @@
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                                <form class="add_form" name="add_card" method="POST" action="add_card.php">                             
+                                    <button class="btn btn-outline-dark flex-shrink-0" type="submit">
+                                        <input type="hidden" name = "id_product" value ="4">
+                                        <i class="bi-cart-fill me-1"></i>
+                                        Add to cart
+                                    </button>
+                               </form>   
                             </div>
                         </div>
 
@@ -146,7 +152,13 @@
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                                <form class="add_form" name="add_card" method="POST" action="add_card.php">                             
+                                    <button class="btn btn-outline-dark flex-shrink-0" type="submit">
+                                        <input type="hidden" name = "id_product" value ="5">
+                                        <i class="bi-cart-fill me-1"></i>
+                                        Add to cart
+                                    </button>
+                               </form>   
                             </div>
                         </div>
                     </div>
@@ -169,7 +181,13 @@
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                                <form class="add_form" name="add_card" method="POST" action="add_card.php">                             
+                                    <button class="btn btn-outline-dark flex-shrink-0" type="submit">
+                                        <input type="hidden" name = "id_product" value ="9">
+                                        <i class="bi-cart-fill me-1"></i>
+                                        Add to cart
+                                    </button>
+                               </form>   
                             </div>
                         </div>
                     </div>
@@ -182,7 +200,7 @@
                 <div class="row">
                     <div class="col-lg-6 h-100 text-center text-lg-start my-auto">
                         <ul class="list-inline mb-2">
-                            <li class="list-inline-item"><a href="#!">About</a></li>
+                            <li class="list-inline-item"><a href="about_us.html">About</a></li>
                             <li class="list-inline-item" style="color: white;">⋅</li>
                             <li class="list-inline-item" ><a href="#!">Contact</a></li>
                             <li class="list-inline-item" style="color: white;">⋅</li>

@@ -29,11 +29,11 @@
 
 
                         <li class="nav-item dropdown">
-                            <a class="nav-link" href="login.html" role="button">Log In</a>
+                            <a class="nav-link" href="login.html" role="button">Log in</a>
                         </li>
                     </ul>
                     <form class="d-flex" >
-                        <button class="btn btn-outline-dark" type="submit" href="checkout.html">
+                        <button class="btn btn-outline-dark" type="submit" onclick="window.location.href='shopping_card.php'">
                             <i class="bi-cart-fill me-1" ></i>
                             Cart
                             <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
@@ -54,16 +54,15 @@
                     <p class= "lead fw-normal text-white-50 mb-0">No matter what you need for your party: We deliver all your party items including speakers, games,
                         and drinks directly to your home. Within 10 minutes and at dicsount prices. <br>
                         Make the best parties just a click away.​</p>
-                    <button class = "main-button" type = "button" href="login.html"> Start your Fiesta now!</button>
-                    
+                    <button class = "main-button" type = "button" onclick="window.location.href='login.html'"> Start your Fiesta now!</button>
                 </div>
             </div>
         </header>
         
         <!-- Section Products first row-->
-        <section class="py-5">
+        <section class="py-5" id = 'lights_and_speakers'>
             <div class = "title">
-                <h1 class="subtitle-main" id = 'lights_and_speakers'>Recommended Lights & Speakers</h1>
+                <h1 class="subtitle-main">Recommended Lights & Speakers</h1>
                 <!-- <a id = 'lights_and_speakers'></a> -->
             </div>
             <div class="container px-4 px-lg-5 mt-5">
@@ -186,9 +185,9 @@
             </div>
         </section>
         <!-- Section Products second row-->
-        <section class = "py-6"> 
+        <section class = "py-6" id = 'party_gadgets'> 
             <div class = "title">
-                <h1 class="subtitle-main" id = 'party_gadgets'>Recommended Party Gadgets</h1>
+                <h1 class="subtitle-main">Recommended Party Gadgets</h1>
             </div>
             <div class="container px-4 px-lg-5 mt-5">
                 <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
@@ -309,9 +308,9 @@
             </div>
         </section>
         <!-- Section Products third row-->
-        <section class = "py-7"> 
+        <section class = "py-7" id = 'drinks_snacks'> 
             <div class = "title">
-                <h1 class="subtitle-main" id = 'drinks_snacks'>Recommended Drinks & Snacks</h1>
+                <h1 class="subtitle-main">Recommended Drinks & Snacks</h1>
             </div>
             <div class="container px-4 px-lg-5 mt-5">
                 <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
@@ -438,7 +437,7 @@
                 <div class="row">
                     <div class="col-lg-6 h-100 text-center text-lg-start my-auto">
                         <ul class="list-inline mb-2">
-                            <li class="list-inline-item"><a href="#!">About us</a></li>
+                            <li class="list-inline-item"><a href="about_us.html">About us</a></li>
                             <li class="list-inline-item" style="color: white;">⋅</li>
                             <li class="list-inline-item" ><a href="#!">Imprint</a></li>
                             <li class="list-inline-item" style="color: white;">⋅</li>

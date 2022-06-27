@@ -17,7 +17,7 @@ if ($id_user == "")
     header("Location: login.html");
 }
  ?>
-    <section class="shopping_card"> 
+    <section class="form-register"> 
         <h4> Shopping Card</h4>
         <table class="shopping_card">
             <thead>
@@ -62,8 +62,8 @@ if ($id_user == "")
 
           <p> Total Price: <?php echo $row["Total"]; ?> </p>
           
-          <button class="single-button" value="Cancel" onclick="window.location.href='mainpage.html'">Return</button>
-          <button class="single-button" value="Checkout" onclick="window.location.href='checkout.php'">Buy Now</button>
+          <button class="botons" value="Cancel" onclick="window.location.href='mainpage.html'">Return</button>
+          <button class="botons" value="Checkout" onclick="window.location.href='checkout.php'">Buy Now</button>
     </section>
     </body>
 </html>
